@@ -64,7 +64,7 @@ func New(t int) hash.Hash {
 	}
 
 	if t%8 != 0 {
-		panic("sha512t: t % 8 != 0")
+		panic("sha512t: t not a multiple of 8")
 	}
 
 	if t == 384 {
